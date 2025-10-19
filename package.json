@@ -1,7 +1,7 @@
 {
   "name": "hsh",
   "description": "Lightweight log-level mapper — because sometimes you just need a little hsh.",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "main": "dist/index.mjs",
   "author": "Koen Brouwer",
   "keywords": [],
@@ -16,8 +16,13 @@
   },
   "files": [
     "dist/index.d.mts",
-    "dist/index.mjs"
+    "dist/index.mjs",
+    "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoenBrouwer/hsh.git"
+  },
   "license": "MIT",
   "packageManager": "pnpm@10.15.1",
   "dependencies": {
