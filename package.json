@@ -1,0 +1,48 @@
+{
+  "name": "hsh",
+  "description": "Lightweight log-level mapper — because sometimes you just need a little hsh.",
+  "version": "1.2.3",
+  "main": "dist/index.mjs",
+  "author": "Koen Brouwer",
+  "keywords": [],
+  "scripts": {
+    "test": "vitest",
+    "build": "tsup",
+    "prepublish": "vitest run && pnpm build"
+  },
+  "exports": {
+    "import": "./dist/index.mjs",
+    "types": "./dist/index.d.mts"
+  },
+  "files": [
+    "dist/index.d.mts",
+    "dist/index.mjs"
+  ],
+  "license": "MIT",
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.0",
+    "dotenv": "^17.2.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm"
+    ],
+    "dts": true,
+    "sourcemap": false,
+    "clean": true,
+    "minify": false,
+    "external": [
+      "zod"
+    ]
+  }
+}
